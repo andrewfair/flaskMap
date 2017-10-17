@@ -1,9 +1,9 @@
 //scale factor
-var s = 2;
+var s = 2.4;
 
 //Width and height
 var w = 500*s;
-var h = 250*s;
+var h = 230*s;
 
 //Define map projection
 var projection = d3.geo.albersUsa()
