@@ -1,0 +1,21 @@
+<!-- index.html-->
+
+{% extends "base.html" %}
+{% block title %}Map Home{% endblock %}
+{% block body %}
+<div class="container">
+	<div class="fixed">
+		<h2>Welcome to the DE-SynPUF Explorer</h2>
+		<h3>Select one or more conditions to see rates by state</h3>
+		<a href="/counties">or click here for counties</a>
+	</div>
+	<div class="flex-item">
+		<form method="POST" action="/">
+		    {{ form.myCondition }}
+		    <input type="submit">
+		</form>
+		<p>{{ condition }} selected</p>
+	</div>
+</div>
+<div id="myMap"></div>
+{% endblock %}
